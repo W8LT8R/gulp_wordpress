@@ -1,6 +1,20 @@
+/* -------------------------------------------------------------------------
+*           SETTING THEMS
+---------------------------------------------------------------------------*/
+//Name Theme
+var nameTheme = 'xxx';
+
+// исходная папка и папка билда
+dir = {
+    src         : 'src/',
+    build       : '../wp-content/themes/'+ nameTheme + '/'
+  },
+
+
+
+
 'use strict'
 const gulp =        require('gulp');
-
 //          Working with Files 
 const rename       = require('gulp-rename'); // Подключаем библиотеку для переименования файлов
 const del =         require('del');
@@ -11,24 +25,18 @@ const concat =      require('gulp-concat');
 const newer =       require('gulp-newer'); // Слечает дату модификации файлов в директориях откуда и куда
 const cached =      require('gulp-cached');
 const remember =    require('gulp-remember');
-
 //          Working with Styles
 const stylus =      require('gulp-stylus');
 const less =        require('gulp-less');
 const cssnano =     require('gulp-cssnano');
 const autoprefixer= require('gulp-autoprefixer');
-
 //      Working with JavaScript
 const uglify       = require('gulp-uglifyjs'); // Подключаем gulp-uglifyjs (для сжатия JS)
-
 //          Working with images
 const imagemin =    require('gulp-imagemin');
-
 //          Browser - Sync
 const browserSync = require('browser-sync').create();
-
 //          Testing tool
-
 
 //          Debug plagin
 const debug =       require('gulp-debug');
@@ -44,7 +52,6 @@ const plumber =     require('gulp-plumber');
 //       multipipe
 //       stream-combinear2
 
-var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'true';
 
 //gulp-ssh — обеспечивает возможность подключения по SSH и SFTP.
 //gulp-zip — архивирует папки и файлы.

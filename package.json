@@ -5,7 +5,7 @@
   "main": "index.js",
   "url": "https://webdesign-master.ru/blog/tools/2016-03-09-gulp-beginners.html",
   "dependencies": {
-    "fs": "0.0.1-security",    
+    "fs": "0.0.1-security",
     "gulp-imagemin": "^5.0.3",
     "gulp-uglifyjs": "^0.6.2"
   },
